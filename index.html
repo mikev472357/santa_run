@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onclick="handleClick()">
+    <!-- The instructions modal -->
+    <div id="instructionsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeInstructions()">&times;</span>
+            <p>In this game you are playing as SANTA and you have to deliver presents to every kid in the world. Use your LEFT CLICK to jump.</p>
+            <!-- Add the new button for closing the modal -->
+            <button id="closeModalButton">Start Game</button>
+        </div>
+    </div>
+    <div class="center-container">
+        <div class="game">
+            <img id="character" src="assets/run_2.png" alt="Character" />
+            <img id="block" src="assets/chimney_2.png" alt="Character" />
+        </div>
+        <div id="score">Score: 0</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

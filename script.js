@@ -117,7 +117,7 @@ function startGameLoop() {
       // Restart the game after the alert
       resetGame();
     } else if (blockLeft < 0 && blockLeft > -20) {
-      score += 2;
+      score += 1;
       scoreDisplay.textContent =
         "Score: " + score + " | High Score: " + highScore;
     } else if (blockLeft < -1000000000000000) {

@@ -63,7 +63,7 @@ function startGame() {
 
       // Update the score when the character passes the block
       if (blockLeft < 0 && blockLeft > -20) {
-        score++;
+        // score++;
         scoreDisplay.textContent = "Score: " + score;
       }
     }, 10);
@@ -117,7 +117,7 @@ function startGameLoop() {
       // Restart the game after the alert
       resetGame();
     } else if (blockLeft < 0 && blockLeft > -20) {
-      score += 1;
+      score += 2;
       scoreDisplay.textContent =
         "Score: " + score + " | High Score: " + highScore;
     } else if (blockLeft < -1000000000000000) {
